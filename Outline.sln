@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outline", "Outline\Outline.csproj", "{DC127D0A-ECD8-4C6E-85C6-5AF614A47914}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.gscoder.graph.outline", "com.gscoder.graph.outline\com.gscoder.graph.outline.csproj", "{A845D31C-CDE1-43DD-8E6B-C05B8E1640A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC127D0A-ECD8-4C6E-85C6-5AF614A47914}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC127D0A-ECD8-4C6E-85C6-5AF614A47914}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC127D0A-ECD8-4C6E-85C6-5AF614A47914}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DC127D0A-ECD8-4C6E-85C6-5AF614A47914}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC127D0A-ECD8-4C6E-85C6-5AF614A47914}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC127D0A-ECD8-4C6E-85C6-5AF614A47914}.Release|x64.ActiveCfg = Release|Any CPU
+		{A845D31C-CDE1-43DD-8E6B-C05B8E1640A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A845D31C-CDE1-43DD-8E6B-C05B8E1640A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A845D31C-CDE1-43DD-8E6B-C05B8E1640A0}.Debug|x64.ActiveCfg = Debug|x64
+		{A845D31C-CDE1-43DD-8E6B-C05B8E1640A0}.Debug|x64.Build.0 = Debug|x64
+		{A845D31C-CDE1-43DD-8E6B-C05B8E1640A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A845D31C-CDE1-43DD-8E6B-C05B8E1640A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A845D31C-CDE1-43DD-8E6B-C05B8E1640A0}.Release|x64.ActiveCfg = Release|x64
+		{A845D31C-CDE1-43DD-8E6B-C05B8E1640A0}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
