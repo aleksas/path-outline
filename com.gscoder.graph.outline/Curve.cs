@@ -35,5 +35,32 @@ namespace com.gscoder.graph.outline
 				return this[Count - 2] - this[Count - 1];
 			}
 		}
+
+		public Vector StartPoint
+		{
+			get
+			{
+				return this[0];
+			}
+		}
+
+		public Vector EndPoint
+		{
+			get
+			{
+				return this[Count - 1];
+			}
+		}
+
+		public IEnumerable<Curve> Subcurves
+		{
+			get
+			{
+				for (int i = 0; i < Count - 1; i++)
+				{
+					yield return new Curve(new Vector[] { this[i], this[i + 1] });
+				}
+			}
+		}
 	}
 }

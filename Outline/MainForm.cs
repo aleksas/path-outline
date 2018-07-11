@@ -48,8 +48,10 @@ namespace com.gscoder.gis.vector.outline
 		private void btnOutline_Click(object sender, EventArgs e)
 		{
 			curveBox.outlines = null;
-			var curves = new CurveCollection(CurveTools.Dissolve(curveBox.curves));
-			curveBox.curves = curves;
+			var dissolvedCurves = new List<Curve>(CurveTools.Dissolve(curveBox.curves));
+			//var cleanedCurves = new List<Curve>(CurveTools.RemoveOrphanedCurves(dissolvedCurves));
+			var curves = new CurveCollection(dissolvedCurves).BreakApart();
+			curveBox.curves = new CurveCollection(dissolvedCurves);
 			curveBox.outlines = new CurveCollection(curves.GetOutlines());
 			curveBox.Invalidate();
 		}

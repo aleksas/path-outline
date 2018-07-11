@@ -107,6 +107,36 @@ namespace com.gscoder.graph.outline
 			return v;
 		}
 
+		public static IEnumerable<Curve> RemoveOrphanedCurves(IList<Curve> curves)
+		{
+			for (int i = 0; i < curves.Count; i++)
+			{
+				bool startOrphaned = true;
+				bool endOrphaned = true;
+				for (int j = i + 1; j < curves.Count; j++)
+				{
+					if (curves[i].StartPoint == curves[j].StartPoint ||
+						curves[i].StartPoint == curves[j].EndPoint)
+					{
+						startOrphaned = false;
+					}
+
+					if (curves[i].EndPoint == curves[j].StartPoint ||
+						curves[i].EndPoint == curves[j].EndPoint)
+					{
+						endOrphaned = false;
+					}
+
+					if (!startOrphaned && !endOrphaned ||
+						curves[i].EndPoint == curves[i].StartPoint)
+					{
+						yield return curves[i];
+						break;
+					}
+				}
+			}
+		}
+
 		public static IEnumerable<Curve> Dissolve(IList<Curve> curves)
 		{
 			for (int i = 0; i < curves.Count; i++)

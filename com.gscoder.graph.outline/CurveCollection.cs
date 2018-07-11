@@ -27,8 +27,8 @@ namespace com.gscoder.graph.outline
 
 		public IEnumerable<Curve> GetOutlines(bool firstOnly = false)
 		{
-			var initialCurveIndex = NorthernCurveIndex();
-			return GetOutlines(NorthernCurveIndex(), firstOnly);
+			var initialCurveIndex = NorthWestCurveIndex();
+			return GetOutlines(NorthWestCurveIndex(), firstOnly);
 		}
 
 		public IEnumerable<Curve> GetOutlines(int initialCurveIndex, bool firstOnly = false)
@@ -57,7 +57,7 @@ namespace com.gscoder.graph.outline
 						MarkInnnerCurvesAsUsed(path, ref used, exclude);
 						yield return outline;
 					}
-					curveIndex = NorthernCurveIndex(used, exclude);
+					curveIndex = NorthWestCurveIndex(used, exclude);
 				}
 
 			} while (outline != null);
@@ -247,12 +247,12 @@ namespace com.gscoder.graph.outline
 			return outline;
 		}
 
-		private int NorthernCurveIndex()
+		private int NorthWestCurveIndex()
 		{
-			return NorthernCurveIndex(new bool[this.Count], new bool[this.Count]);
+			return NorthWestCurveIndex(new bool[this.Count], new bool[this.Count]);
 		}
 
-		private int NorthernCurveIndex(bool[] used, bool[] exclude)
+		private int NorthWestCurveIndex(bool[] used, bool[] exclude)
 		{
 			Vector closestPoint;
 			var p = new Vector() { Lat = Vector.MaxLat, Lon = 0 };
@@ -286,6 +286,21 @@ namespace com.gscoder.graph.outline
 				}
 			}
 			return res;
+		}
+
+		public CurveCollection BreakApart()
+		{
+			CurveCollection result = new CurveCollection();
+
+			foreach (Curve c in this)
+			{
+				foreach (Curve subc in c.Subcurves)
+				{
+					result.Add(subc);
+				}
+			}
+
+			return result;
 		}
 	}
 }
