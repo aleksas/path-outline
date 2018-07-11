@@ -17,6 +17,7 @@ Algorithm itself is formulated in [these two functions](https://github.com/aleks
 
 # Essentially
 Take set of paths 
+
 ![image](https://user-images.githubusercontent.com/594470/42564728-34bfca72-850a-11e8-803f-dc3a095378e8.png)
 
 And calculate outline 
