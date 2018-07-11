@@ -9,3 +9,4 @@ Library is able to deal with multiple disconnected areas in which case speed dec
 Sample app provided for anyone to draw intersectable curves and test algorithm.
 
 Initial problem was formulated here: [GIS StackExchange](http://gis.stackexchange.com/questions/102559/outline-from-multiple-tracks).
+Archived project at [Codeplex](https://archive.codeplex.com/?p=outlinefromtracks)
