@@ -18,8 +18,8 @@ Algorithm itself is formulated in [these two functions](https://github.com/aleks
 # Essentially
 Take set of paths 
 
-![image](https://user-images.githubusercontent.com/594470/42564728-34bfca72-850a-11e8-803f-dc3a095378e8.png)
+![image](https://user-images.githubusercontent.com/594470/42573924-104479e2-8526-11e8-8736-d803250ffc6d.png)
 
 And calculate outline 
 
-![image](https://user-images.githubusercontent.com/594470/42564802-68261f1a-850a-11e8-9b34-2b521600881f.png)
+![image](https://user-images.githubusercontent.com/594470/42573957-2322b060-8526-11e8-845f-73d47f8aac1b.png)
