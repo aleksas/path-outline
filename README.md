@@ -1,3 +1,5 @@
+ # Intro
+
 Library for calculating outline from a set of dissolved (GPS) tracks.
 
 WARNING: Library has an issue with breaking paths at intersection. Here is the solution.
@@ -10,3 +12,5 @@ Sample app provided for anyone to draw intersectable curves and test algorithm.
 
 Initial problem was formulated here: [GIS StackExchange](http://gis.stackexchange.com/questions/102559/outline-from-multiple-tracks).
 Archived project at [Codeplex](https://archive.codeplex.com/?p=outlinefromtracks)
+
+Algorithm itself is formulated in [these two functions](https://github.com/aleksas/path-outline/blob/master/com.gscoder.graph.outline/CurveCollection.cs#L173-L248)
