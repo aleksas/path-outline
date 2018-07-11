@@ -14,3 +14,11 @@ Initial problem was formulated here: [GIS StackExchange](http://gis.stackexchang
 Archived project at [Codeplex](https://archive.codeplex.com/?p=outlinefromtracks)
 
 Algorithm itself is formulated in [these two functions](https://github.com/aleksas/path-outline/blob/master/com.gscoder.graph.outline/CurveCollection.cs#L173-L248)
+
+# Essentially
+Take set of paths 
+![image](https://user-images.githubusercontent.com/594470/42564728-34bfca72-850a-11e8-803f-dc3a095378e8.png)
+
+And calculate outline 
+
+![image](https://user-images.githubusercontent.com/594470/42564802-68261f1a-850a-11e8-9b34-2b521600881f.png)
